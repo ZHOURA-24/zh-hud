@@ -1,8 +1,5 @@
-local active = false
-
 RegisterCommand('showhud', function()
     Framework.UpdatePlayerData()
-    active = not active
     local PlayerData = Framework.PlayerData
     local job = PlayerData.job.name
     local jobLabel = PlayerData.job.label
@@ -13,7 +10,7 @@ RegisterCommand('showhud', function()
         textDuty = 'ON DUTY'
     end
     SendNUIMessage({
-        actionhud = active,
+        actionhud = true,
         dataHud = {
             id = id,
             job = job,

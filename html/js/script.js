@@ -2,8 +2,9 @@ $(document).ready(function () {
     window.addEventListener("message", function (event) {
         if (event.data.actionhud == true) {
             $(".hud-container").css("display", "block");
-        } else {
-            $(".hud-container").css("display", "none");
+            setTimeout(() => {
+                $(".hud-container").css("display", "none");
+            }, 10000);
         }
         if (event.data.dataHud) {
             $("#id").html(` ID : ${event.data.dataHud.id}`);
