@@ -1,0 +1,34 @@
+* {
+    font-family: 'Tilt Neon', cursive;
+}
+
+.hud-container {
+    position: relative;
+    display: none;
+    top: 90vh;
+    right: -830px;
+    width: 60vh;
+    height: 3.5vh;
+    text-align: center;
+    border: 0.3vh solid #adbeff;
+    border-radius: 2vh;
+    background-color: #8181d627;
+    transition: all 500ms ease-out;
+    box-shadow: 0px 0px 6px 1.5px rgba(43,87,248,0.75);
+}
+
+.text-hud {
+    font-size: 2vh;
+    color: #ffffff;
+    margin-top: -0.6vh;
+    text-shadow: 4px 4px 2px #2b57f8;
+}
+
+.img-job-pos {
+   margin-top: -3.5vh;
+}
+
+.img-job {
+    width: 4vh;
+    height: 4vh;
+}
